@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE GABUT BY WAHYU</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="login-container" id="login-container">
+            <div class="logo-container">
+                <img src="https://pxbars.com/wp-content/uploads/2024/06/picture-of-naruto-and-kurama.jpg" alt="Naruto Logo">
+            </div>
+            <h1 class="title">SELAMAT DATANG DI WEBSITE GABUT</h1>
+            <form action="#" method="POST" class="login-form" id="login-form">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="login-btn">Login</button>
+            </form>
+        </div>
+        <div class="welcome-container" id="welcome-container">
+            <h1 class="welcome-message animate-text">SELAMAT DATANG, <span id="user-name"></span>!</h1>
+            <p class="animate-text">KAMU SUDAH LOGIN.</p>
+            <div class="ninja">
+                <img src="https://pxbars.com/wp-content/uploads/2024/06/picture-of-naruto-and-kurama.jpg" alt="Naruto Image">
+            </div>
+            <div class="additional-info">
+                <p class="animate-text">PERKENALKAN</p>
+                <p class="animate-text">NAMA SAYA : WAHYU YUHONO</p>
+                <p class="animate-text">ALAMAT: DESA TUNGGU RT 04 RW 01 KEC.PENAWANGAN KAB.GROBOGAN</p>
+                <p class="animate-text">SEKOLAH : SMA NEGERI 1 KARANG RAYUNG</p>
+            </div>
+            <button id="show-second-view-btn" class="show-view-btn">Show Second Page</button>
+        </div>
+        <div class="second-view-container" id="second-view-container">
+            <h2 class="second-view-title">Hidden Leaf Village</h2>
+            <p class="second-view-description">The Hidden Leaf Village (木ノ葉隠れの里, Konohagakure no Sato, Literally meaning: Village Hidden by Tree Leaves) is the hidden village of the Land of Fire. As the village of one of the Five Great Shinobi Countries, Konohagakure has a Kage as its leader known as the Hokage, who resides in the Hokage Residence.</p>
+            <button id="hide-second-view-btn" class="show-view-btn">Hide Second Page</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

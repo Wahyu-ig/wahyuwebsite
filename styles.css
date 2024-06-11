@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://images.everyeye.it/img-notizie/i-dubbi-coerenza-storia-naruto-nell-infanzia-protagonista-v4-720088.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.login-container, .welcome-container, .second-view-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+}
+
+.logo-container img {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.title {
+    color: #FFA500;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group label {
+    color: #FFF;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.login-btn, .show-view-btn {
+    background-color: #FFA500;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-btn:hover, .show-view-btn:hover {
+    background-color: #FF4500;
+}
+
+.welcome-container, .second-view-container {
+    display: none;
+    transform: rotateY(180deg);
+}
+
+.welcome-message {
+    color: #FFA500;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.welcome-container p, .second-view-title, .second-view-description {
+    color: #FFF;
+    font-size: 18px;
+}
+
+.ninja img {
+    width: 150px;
+    margin-top: 20px;
+    animation: float 3s infinite;
+}
+
+.additional-info {
+    margin-top: 20px;
+    text-align: left;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.animate-text {
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+/* Aturan CSS untuk halaman kedua */
+.second-view-container {
+    display: none;
+    background-image: url('https://nerdhits.com.br/wp-content/uploads/2024/06/naruto-modo-sabio.webp'); /* Background yang sama seperti halaman login */
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: #FFF;
+}
